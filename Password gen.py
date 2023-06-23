@@ -1,7 +1,7 @@
 alphabets=["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
 symbol=["'","@","$","!","£","&"]
 name=input("Enter your name:")
-count_number=int(input("how many numbers in your password"))
+count_number=int(input("how many numbers in your password:"))
 count_letter=int(input("how many letters in your password:"))
 count_symbol=int(input("how many symbols in your password:"))
 
@@ -21,7 +21,7 @@ for var in range (count_letter):
 
    
 for var in range (count_symbol):
-    ran_symbol=random.randint(0,len(symbol)-1)
+    ran_symbol=random.randint(0,len(symbol))
     pass_symbol.append(symbol[ran_symbol])
    # print(pass_symbol)
 
@@ -38,5 +38,5 @@ for var in range (count_number):
     random.shuffle(pass_list)
     #print(pass_list)
    
-    password="".join(pass_list)
+    password=" ".join(pass_list)
     print(password)
